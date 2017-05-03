@@ -6,12 +6,12 @@ function average (numbers) {
   return _.round(_.mean(numbers), 0);
 }
 
-export default ({data, color}) => (
+export default ({data, color, units}) => (
       <div>
         <Sparklines height={120} width={180} data={data}>
           <SparklinesLine color={color} />
           <SparklinesReferenceLine type="avg" />
         </Sparklines>
-        <div>{average(data)}</div>
+        <div>{average(data)} {units}</div>
       </div>
 );
