@@ -12,6 +12,6 @@ export default ({data, color, units}) => (
           <SparklinesLine color={color} />
           <SparklinesReferenceLine type="avg" />
         </Sparklines>
-        <div>{average(data)} {units}</div>
+        <div className="stat-number">{average(data)} {units}</div>
       </div>
 );
