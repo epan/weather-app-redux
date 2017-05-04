@@ -2,6 +2,7 @@
   margin: 20px 0px
 }
 
-.table td.city-name {
-  vertical-align: middle
+td:first-of-type {
+  height: 200px;
+  min-width: 200px;
 }
