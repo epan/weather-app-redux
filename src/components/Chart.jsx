@@ -8,7 +8,7 @@ function average (numbers) {
 
 export default ({data, color, units}) => (
       <div>
-        <Sparklines height={100} width={100} data={data}>
+        <Sparklines height={100} width={180} data={data}>
           <SparklinesLine color={color} />
           <SparklinesReferenceLine type="avg" />
         </Sparklines>
